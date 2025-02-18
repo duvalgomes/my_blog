@@ -23,15 +23,15 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" onclick="openPopup('about-popup')">About</a></li>
+                <li><a href="#" onclick="openPopup()">Contact</a></li>
+
             </ul>
         </nav>
     </header>
     <main>
         <article>
-            <h2>Cybersecurity in Goa: A Growing Hub for Digital Defense</h2>
-            <p><strong>Cybersecurity in Goa: A Growing Hub for Digital Defense</strong></p>
+            <h2>#1Cybersecurity in Goa: A Growing Hub for Digital Defense</h2>
 
             <p>Goa is widely known for its beaches, nightlife, and tourism, but did you know it's also becoming a significant hub for cybersecurity in India? With increasing cyber threats worldwide, Goa is taking major steps to build a strong cybersecurity ecosystem through education, research, and community-driven events. Whether you're an aspiring cybersecurity professional or a tech enthusiast, here’s why Goa should be on your radar.</p>
         
@@ -62,6 +62,26 @@
         
             </p>
         </article>
+         <!-- Contact Form (Hidden by Default) -->
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Contact Me</h2>
+            <p>Phone☎️: 911</p>
+            <p>Feel free to reach out for any inquiries😊</p>
+        </div>
+    </div>
+
+    <!-- About Popup -->
+    <div id="about-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('about-popup')">&times;</span>
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate blogger who loves sharing thoughts and ideas.</p>
+            <p>Welcome to my blog!</p>
+        </div>
+    </div>
+    
     </main>
     <footer>
         <p>&copy; 2025 My Blog</p>
